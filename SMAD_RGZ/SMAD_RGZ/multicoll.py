@@ -25,7 +25,7 @@ def pair_conjugation(matr_X):
         a = np.array([el for el in matr_Xt], dtype = float)
         r = []
         r_1 = []
-        k = 7
+        k = 5
         for i in range(k):
             r.append([])
             for j in range(k):

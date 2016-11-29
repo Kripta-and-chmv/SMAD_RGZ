@@ -25,6 +25,9 @@
     <Compile Include="autocorr.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="check_adec.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="func.py">
       <SubType>Code</SubType>
     </Compile>
@@ -38,8 +41,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="reading.py" />
+    <Compile Include="selection_best_regression_model.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1.txt" />
     <Content Include="data.txt" />
   </ItemGroup>
   <PropertyGroup>
