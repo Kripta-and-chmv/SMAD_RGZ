@@ -25,9 +25,6 @@
     <Compile Include="autocorr.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="check_adec.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="func.py">
       <SubType>Code</SubType>
     </Compile>

@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+﻿import matplotlib.pyplot as plt
 import sympy as sp
 import numpy as np
 import math
@@ -25,7 +25,8 @@ def pair_conjugation(matr_X):
         a = np.array([el for el in matr_Xt], dtype = float)
         r = []
         r_1 = []
-        k = 5
+        k1 = 5
+        k=4
         for i in range(k):
             r.append([])
             for j in range(k):
@@ -46,7 +47,8 @@ def conjugation(r):
         return R_i_2, max_R_i
     #################################
 def check_mult(x1, x2, x3, x4):
-    matr_X = f.create_X_matr(x1, x2, x3, x4)
+    #matr_X = f.create_X_matr(x1, x2, x3, x4)
+    matr_X = np.array([[el1 , el2, el3, el4] for el1, el2, el3, el4 in zip(x1, x2, x3, x4)])
     det_XtX, XtX = det_inf_matr(matr_X)
     min_eigvals, max_eigvals = eigen_vals(XtX)
     cond_NG = measure_cond_matr_Neumann_Goldstein(min_eigvals, max_eigvals)

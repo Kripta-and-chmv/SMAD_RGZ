@@ -7,7 +7,8 @@ import scipy.stats as st
 from functools import *
 def auto_corr(x1, x2, x3, x4, Y):
     N = 87
-    matr_X = f.create_X_matr(x1, x2, x3, x4)
+    #matr_X = f.create_X_matr(x1, x2, x3, x4)
+    matr_X = np.array([[el1 , el2, el3, el4] for el1, el2, el3, el4 in zip(x1, x2, x3, x4)])
     est_theta = f.parameter_estimation_theta(matr_X, Y)
     DW, fl = test_Durbin_Watson(matr_X, est_theta, Y, N)
     est_t = Cochrane_Oreutt_procedure(matr_X,  Y, N)

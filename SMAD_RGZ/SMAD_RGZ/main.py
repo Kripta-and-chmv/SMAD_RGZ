@@ -3,12 +3,12 @@ import func as f
 import multicoll as m
 import heteroscedasticity as h
 import autocorr as a
-import check_adec as c
+
 import selection_best_regression_model as s
 import numpy as np
 
 init_data = r.ReadData()
-x1, x2, x3, x4, y = init_data.get_data('1.txt')
+x1, x2, x3, x4, y = init_data.get_data('data.txt')
 N = 87
 
 #f.Graph(x1, y)
@@ -49,3 +49,5 @@ h.heterosced(x1, x2, x3, x4, y)
 #s.select_best_regress_model(x1, x2, x3, x4, y)
 #c.check_adequacy_of_the_model(x1, x2, x3, x4, y)
 #f.freq_intervals_for_response(x1, x2, x3, x4, y)
+#f.graf_tail(x1, x2, x3, x4, y)
+#f.Check_adequacy(x1, x2, x3, x4, y, N)
